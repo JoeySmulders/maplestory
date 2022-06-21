@@ -11,26 +11,202 @@
     <!-- Custom CSS -->
     <link type="text/css" rel="stylesheet" href="stylesheet.css" />
 
-    <title>Maplestory Helper Site</title>
+    <!-- Custom JS -->
+    <script src="script.js"></script>    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <title>Bossing Buffs</title>
   </head>
   <body class="bg-dark">
-  
-  <!-- Navbar -->
-  <div class="navbar navbar-dark bg-dark">
-    <div class="container">
-      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a></li>
-        <li><a href="buffs.html" class="nav-link px-2 text-warning">Bossing Buffs</a></li>
-      </ul>
-    </div>
-  </div>
-  
-  <!-- Main info container -->
-	<div class="container-md mt-5">
-		
-	</div>
 
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $("#sortable, #sortable2, #sortable3").sortable();    
+    });
+</script>
+  
+        <!-- Navbar -->
+        <!-- <div class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="buffs.html" class="nav-link px-2 text-warning">Bossing Buffs</a></li>
+                </ul>
+            </div>
+        </div> -->
+
+        <div id="maincontainer" class="container">
+        
+            <div class="d-flex justify-content-center">
+                <h1 class="header-text">Bossing buffs Checklist</h1>
+            </div>
+        
+            <!-- Main buff container -->
+            <div class="container-md">
+        
+                <div class="d-flex">
+                    <h1 class="header-text">Consumables</h1>
+                </div>
+        
+                <!-- Consumables -->
+                <ul id="sortable">
+        
+                    <div class="border border-white">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
+                            <label class="form-check-label" for="flexCheck1">
+                                <h4>Monster Park Green Potion</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="border border-white">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck2">
+                            <label class="form-check-label" for="flexCheck2">
+                                <h4>Monster Park Red/Blue potion</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="border border-white">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck3">
+                            <label class="form-check-label" for="flexCheck3">
+                                <h4>Greater Blessing of Guild</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="border border-white">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck4">
+                            <label class="form-check-label" for="flexCheck4">
+                                <h4>Legion Might</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="border border-white">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck5">
+                            <label class="form-check-label" for="flexCheck5">
+                                <h4>Sparkling Red / Blue Star Potion*</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="border border-white">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck6">
+                            <label class="form-check-label" for="flexCheck6">
+                                <h4>Advanced Boss / Penetrating Rush Boost Potion*</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="border border-white">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck7">
+                            <label class="form-check-label" for="flexCheck7">
+                                <h4>Advanced [Stat] Potion IX</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="border border-white">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck8">
+                            <label class="form-check-label" for="flexCheck8">
+                                <h4>MVP Buff</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="border border-white">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck9">
+                            <label class="form-check-label" for="flexCheck9">
+                                <h4>Candied Apple</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="border border-white">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck10">
+                            <label class="form-check-label" for="flexCheck10">
+                                <h4>Tengu buff / Onyx Apple / Takoyaki / Cider</h4>
+                            </label>
+                        </div>
+                    </div>
+                </ul>
+        
+        
+                <!-- Skills -->
+                <div class="d-flex">
+                    <h1 class="header-text">Skills</h1>
+                </div>
+        
+                <ul id="sortable2">
+                    <div class="border border-white">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck11">
+                            <label class="form-check-label" for="flexCheck11">
+                                <h4>Noblesse Skills</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="border border-white">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck12">
+                            <label class="form-check-label" for="flexCheck12">
+                                <h4>Advanced Weapon Tempering</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="border border-white">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck13">
+                            <label class="form-check-label" for="flexCheck13">
+                                <h4>Wild Hunter Call of the Wild</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="border border-white">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck14">
+                            <label class="form-check-label" for="flexCheck14">
+                                <h4>Bishop Heaven's Door</h4>
+                            </label>
+                        </div>
+                    </div>
+                </ul>
+        
+                <!-- Etc -->
+                <div class="d-flex">
+                    <h1 class="header-text">Etc</h1>
+                </div>
+        
+                <ul id="sortable3">
+                    <div class="border border-white">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck15">
+                            <label class="form-check-label" for="flexCheck15">
+                                <h4>Level 250/275 Fame buff</h4>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="border border-white">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck16">
+                            <label class="form-check-label" for="flexCheck16">
+                                <h4>Event buffs</h4>
+                            </label>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        
+            <p class="small-text"><small>*You can only use one of these when using Advanced Weapon Tempering</small></p>
+        </div>
+
   </body>
 </html>

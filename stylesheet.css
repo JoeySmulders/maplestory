@@ -1,0 +1,64 @@
+.header-text {
+    margin-top: 2.5%;
+}
+
+.header-text, .about-text {
+    color: white;
+}
+
+#sortable, #sortable2, #sortable3 {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 50px;
+    width: 50%;
+}
+
+#sortable li, #sortable2 li, #sortable3 li {
+    margin: 0 3px 3px 3px;
+    padding: 0.4em;
+    padding-left: 1.5em;
+    font-size: 1.4em;
+    height: 18px;
+    color: white;
+}
+
+#sortable li span, #sortable2 li span, #sortable3 li span {
+    position: absolute;
+    margin-left: -1.3em;
+}
+
+#maincontainer {
+    margin-top: 1em;
+    height: 78em;
+    background-color: #343a41;
+    border-radius: 10px;
+    position: relative;
+}
+
+.border {
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
+}
+
+.small-text {
+    margin-top: 1%;
+    float: right;
+}
+
+p {
+    color: white;
+}
+
+h4 {
+    color: white;
+}
+
+input[type="checkbox"], label {
+    height: 1.6em;
+}
+
+label {
+
+    width: 100%;
+}
