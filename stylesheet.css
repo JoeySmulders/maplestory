@@ -1,5 +1,5 @@
 .header-text {
-    margin-top: 2.5%;
+    margin: 1%;
 }
 
 .header-text, .about-text {
@@ -42,7 +42,7 @@
 }
 
 .small-text {
-    margin-top: 1%;
+    margin-top: 5%;
     float: right;
 }
 
@@ -59,6 +59,5 @@ input[type="checkbox"], label {
 }
 
 label {
-
     width: 100%;
 }
